@@ -1,0 +1,29 @@
+<h1>Articles listing page</h1>
+<!--<ul>-->
+<%# @articles.each do |article| %>
+<!--  <li><%#= article.title %></li>-->
+<%# end %>
+<!--</ul>-->
+
+<table>
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Title</td>
+      <td>Description</td>
+      <td>Actions</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.id %></td>
+        <td><%= article.title %></td>
+        <td><%= article.description %></td>
+        <td>...</td>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>
